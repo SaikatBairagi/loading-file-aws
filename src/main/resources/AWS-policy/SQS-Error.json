@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2026-03-11T03:19:59.675Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AIDAW2JKGABOBAEBYM7UL"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "74.102.104.220"
+      },
+      "responseElements": {
+        "x-amz-request-id": "ZYRBKHPS82BXM89K",
+        "x-amz-id-2": "Xm+PjGIMiibUHbij6E41o/n+1SjTvwEOvv7mJee+JxpbaL2vnMqdJZddmiInmrvv7R88klbHeXLRNc7IJBJsFUvjMUPCZDOZ"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "cv-uploaded-to-sqs",
+        "bucket": {
+          "name": "saikat-video-upload-bucket",
+          "ownerIdentity": {
+            "principalId": "A2U63L27CUR7R5"
+          },
+          "arn": "arn:aws:s3:::saikat-video-upload-bucket"
+        },
+        "object": {
+          "key": "videos/ca977af8-75fe-4b63-90ee-5c2d1b978e6a-CV.pdf",
+          "size": 9975759,
+          "eTag": "b2d4d01d1b14bff463a6df346440f07f",
+          "sequencer": "0069B0DF5F70187C0B"
+        }
+      }
+    }
+  ]
+}
