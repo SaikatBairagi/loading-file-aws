@@ -27,10 +27,11 @@ public class AWSS3UploadServiceImpl implements UploadService {
 
     @Override
     public SignedUrlResponse upload(
+            Long userId,
             String fileName,
             String contentType) {
         String safeName = fileName == null ? "file" : fileName.replaceAll("[^a-zA-Z0-9._-]", "_");
-        String key = "videos/" + UUID.randomUUID() + "-" + safeName;
+        String key = "videos/"+userId+"/" + UUID.randomUUID() + "-" + safeName;
 
 
         PutObjectRequest putObjectRequest = PutObjectRequest.builder()
